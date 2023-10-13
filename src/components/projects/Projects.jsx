@@ -59,8 +59,8 @@ const Projects = () => {
       description:
         "You want to know me more.. Visit Me.",
       technologies: "HTML | CSS | React.js | Figma",
-      //link: "https://nirmalyamondal.netlify.app/",
-      //github: "https://github.com/nirmalyax/Nirmalya_Portfolio",
+      link: "https://nirmalyamondal.vercel.app/",
+      github: "https://github.com/nirmalyax/React-folio",
     },
     {
       id: 6,
