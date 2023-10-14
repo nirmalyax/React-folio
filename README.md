@@ -38,7 +38,7 @@
 
 **📖 Single-Page Layout**
 
-**🎨 Styled with React-Bootstrap and CSS with easy to customize colors**
+**🎨 Styled with React, Bootstrap, CSS and Figma with easy to customize colors**
 
 **📱 Fully Responsive**
 
@@ -48,11 +48,61 @@
 
 Clone down this repository. You will need `node.js` and `git` installed globally on your machine.
 
+1. **Navigate to GitHub Repository**
+
+   - Open your web browser and go to [GitHub](https://github.com).
+
+2. **Login to Your GitHub Account**
+
+   - If you're not already logged in, click the "Sign In" button at the top right corner of the page and enter your credentials.
+
+3. **Find the Repository**
+
+   - Use the GitHub search bar at the top of the page to search for the repository you want to clone.
+
+4. **Access the Repository**
+
+   - Click on the repository's name in the search results or navigate to it through your GitHub account.
+
+5. **Clone the Repository**
+
+   - Click the "Code" button, which is located on the right side of the repository page, just above the file list.
+
+6. **Copy the Clone URL**
+
+   - In the dropdown, ensure "HTTPS" is selected, and then click the clipboard icon to copy the URL to your clipboard.
+
+7. **Open a Terminal**
+
+   - Open a terminal or command prompt on your local machine.
+
+8. **Navigate to the Directory Where You Want to Clone the Repository**
+
+   - Use the `cd` command to move to the directory where you want to store the cloned repository.
+
+9. **Clone the Repository**
+
+   - In the terminal, use the following command to clone the repository, replacing `<repository-url>` with the URL you copied in step 6:
+
+     ```bash
+     git clone <repository-url>
+     ```
+
+   For example:
+
+   ```bash
+   git clone https://github.com/username/repository-name.git
+
+
 ## 🛠 Installation and Setup Instructions
 
-1. Installation: `npm install`
+1. Installation: `npm install` or `npm i`
 
-2. In the project directory, you can run: `npm start`
+2. In the project directory, you can run: `npm run start` or `npm start`
+
+3. You can start the development server by `npm run dev`
+
+   <br/>
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser. 
