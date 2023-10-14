@@ -6,7 +6,7 @@
 
 <div align="center">
 
-![GitHub repo size](https://img.shields.io/github/repo-size/nirmalyax/My-portfolio?color=yellow)  [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+![GitHub repo size](https://img.shields.io/github/repo-size/nirmalyax/React-folio?color=yellow)  [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 </div>
 
 <table align="center">
@@ -22,12 +22,12 @@
      </thead>
     <tbody>
          <tr>
-            <td><a href="https://github.com/nirmalyax/My-portfolio"</a>Project</td>
-            <td><img alt="Stars" src="https://img.shields.io/github/stars/nirmalyax/My-portfolio?style=flat&logo=github"/></td>
-             <td><img alt="Forks" src="https://img.shields.io/github/forks/nirmalyax/My-portfolio?style=flat&logo=github"/></td>
-            <td><img alt="Issues" src="https://img.shields.io/github/issues/nirmalyax/My-portfolio?style=flat&logo=github"/></td>
-            <td><img alt="Open Pull Requests" src="https://img.shields.io/github/issues-pr/nirmalyax/My-portfolio?style=flat&logo=github"/></td>
-           <td><img alt="Close Pull Requests" src="https://img.shields.io/github/issues-pr-closed/nirmalyax/My-portfolio?style=flat&color=critical&logo=github"/></td>
+            <td><a href="https://github.com/nirmalyax/React-folio"</a>Project</td>
+            <td><img alt="Stars" src="https://img.shields.io/github/stars/nirmalyax/React-folio?style=flat&logo=github"/></td>
+             <td><img alt="Forks" src="https://img.shields.io/github/forks/nirmalyax/React-folio?style=flat&logo=github"/></td>
+            <td><img alt="Issues" src="https://img.shields.io/github/issues/nirmalyax/React-folio?style=flat&logo=github"/></td>
+            <td><img alt="Open Pull Requests" src="https://img.shields.io/github/issues-pr/nirmalyax/React-folio?style=flat&logo=github"/></td>
+           <td><img alt="Close Pull Requests" src="https://img.shields.io/github/issues-pr-closed/nirmalyax/React-folio?style=flat&color=critical&logo=github"/></td>
         </tr>
     </tbody>
 </table>
