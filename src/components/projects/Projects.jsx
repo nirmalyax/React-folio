@@ -1,7 +1,7 @@
 import "./portfolio.css";
 
 import IMG1 from "../../assets/textanalyzer.jpeg";
-import IMG2 from "../../assets/Signin:Signup.gif";
+import IMG2 from "../../assets/Signin.Signup.gif";
 import IMG3 from "../../assets/Tripboss.jpeg";
 import IMG4 from "../../assets/p1.png";
 import IMG5 from "../../assets/60060357-3D05-48DB-847B-EE3047F452F8_1_201_a.jpeg";
