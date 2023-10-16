@@ -69,10 +69,26 @@ header {
   }
 }
 
-.social-icon {
-  font-size: 28px;
+/* Existing CSS styles 
+.header__container {
+  padding: 20px; 
+  text-align: center;
 }
 
+.header__title {
+  margin-top: 20px; 
+}
+
+.scroll__down {
+  margin-top: 20px; 
+  margin-left: 30px;
+}
+*/
+
+.social-icon {
+  font-size: 20px;
+  
+}
 
 @media (min-width: 768px) {
   .social-icon {
@@ -80,42 +96,39 @@ header {
   }
 }
 
-
 @media (min-width: 1200px) {
   .social-icon {
-    font-size: 39px;
+    font-size: 26px;
   }
 }
 
-
 .scroll__down {
-  font-size: 18px;
+  font-size: 15px;
+  margin-left: 60px;
 }
-
 
 @media (min-width: 768px) {
   .scroll__down {
-    font-size: 24px;
+    font-size: 22px;
+    margin-left: 30px;
   }
 }
-
 
 @media (min-width: 1200px) {
   .scroll__down {
-    font-size: 27px;
+    font-size: 20px;
+    margin-right: -70px;
+    
   }
 }
-
-
 
 .header__text {
   font-size: 14px;
 }
 
 .header__title {
-  font-size: 28px;
+  font-size: 40px;
 }
-
 
 @media (min-width: 768px) {
   .header__text {
@@ -123,17 +136,16 @@ header {
   }
 
   .header__title {
-    font-size: 36px;
+    font-size: 32px;
   }
 }
 
-
 @media (min-width: 1200px) {
   .header__text {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .header__title {
-    font-size: 48px;
+    font-size: 60px;
   }
 }

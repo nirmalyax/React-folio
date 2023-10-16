@@ -82,7 +82,7 @@ footer {
  
   .footer__logo {
     text-decoration: none;
-    color: #fff; 
+    color: var(--color-bg); 
     font-weight: bold;
   }
   
@@ -102,7 +102,7 @@ footer {
   
   .permalinks a {
     text-decoration: none;
-    color: #fff; 
+    color: var(--color-bg); 
   }
   
   
