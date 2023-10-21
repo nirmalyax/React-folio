@@ -16,18 +16,14 @@ const Footer = () => {
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div className="footer__socials">
-        <a href="https://www.linkedin.com/in/nirmalya-mondal" target="_blank" rel="noopener noreferrer">
-          <BsLinkedin />
-        </a>
-        <a href="https://github.com/nirmalyax" target="_blank" rel="noopener noreferrer">
-          <FaGithub />
-        </a>
+      <a href="https://www.linkedin.com/in/nirmalya-mondal/" target="_blank" rel="noreferrer" ><BsLinkedin /></a>
+      <a href="https://github.com/nirmalyax" target="_blank" rel="noreferrer" ><FaGithub /></a>
       </div>
       <div className="footer__copyright">
         <small>&copy;2023. All rights reserved.</small>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
