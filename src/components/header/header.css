@@ -68,3 +68,84 @@ header {
     display: none;
   }
 }
+
+/* Existing CSS styles 
+.header__container {
+  padding: 20px; 
+  text-align: center;
+}
+
+.header__title {
+  margin-top: 20px; 
+}
+
+.scroll__down {
+  margin-top: 20px; 
+  margin-left: 30px;
+}
+*/
+
+.social-icon {
+  font-size: 20px;
+  
+}
+
+@media (min-width: 768px) {
+  .social-icon {
+    font-size: 38px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .social-icon {
+    font-size: 26px;
+  }
+}
+
+.scroll__down {
+  font-size: 15px;
+  margin-left: 60px;
+}
+
+@media (min-width: 768px) {
+  .scroll__down {
+    font-size: 22px;
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .scroll__down {
+    font-size: 20px;
+    margin-right: -70px;
+    
+  }
+}
+
+.header__text {
+  font-size: 14px;
+}
+
+.header__title {
+  font-size: 40px;
+}
+
+@media (min-width: 768px) {
+  .header__text {
+    font-size: 18px;
+  }
+
+  .header__title {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header__text {
+    font-size: 20px;
+  }
+
+  .header__title {
+    font-size: 60px;
+  }
+}
