@@ -12,7 +12,7 @@
 <table align="center">
     <thead align="center">
         <tr border: 1px;>
-            <td><b>Project Stats</td>
+            <td><b>Project Statistics</td>
             <td><b>🌟 Stars</b></td>
             <td><b>🍴 Forks</b></td>
             <td><b>🐛 Issues</b></td>
