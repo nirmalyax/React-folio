@@ -24,7 +24,7 @@ const Intro = () => {
             <article className="about__card">
               <FaAward className="about__icon" />
               <h5>Experience</h5>
-              <small>1.9+ year in Infosys <br />
+              <small>1.10+ years in Infosys <br />
               Test Engineer</small>
             </article>
             <article className="about__card">
