@@ -24,7 +24,7 @@ const Intro = () => {
             <article className="about__card">
               <FaAward className="about__icon" />
               <h5>Experience</h5>
-              <small>1.10+ years in Infosys <br />
+              <small>2+ years in Infosys <br />
               Test Engineer</small>
             </article>
             <article className="about__card">
@@ -35,7 +35,7 @@ const Intro = () => {
           </div>
           <article className="about__card-para">
           <p className="summary">
-          With over 1.10+ years of experience in automation testing and frontend development, I have honed my skills in ensuring the quality and functionality of web applications. My expertise includes creating automated test scripts, conducting test cases, and performing regression testing to detect and resolve issues in software. Additionally, I have a strong background in frontend development, enabling me to collaborate effectively with development teams and understand the intricacies of the user interface, leading to more comprehensive and efficient testing processes. My experience in both fields positions me as a valuable asset in delivering high-quality, user-friendly, and bug-free web applications.
+          With over 2+ years of experience in automation testing, I have honed my skills in ensuring the quality and functionality of web applications. My expertise includes creating automated test scripts, conducting test cases, and performing regression testing to detect and resolve issues in software. Additionally, I have a strong background in <strong>ClOUD <strong/>, enabling me to collaborate effectively with DEVOPS teams and understand the intricacies, leading to more comprehensive and efficient testing processes.
           </p>
           </article>
           <a href="#contact" className="btn btn-primary">
