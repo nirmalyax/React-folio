@@ -1,6 +1,6 @@
 # React JS Portfolio Website
 
-[🔗Live Demo🔗](https://nirmalyamondal.vercel.app/)
+[🔗Live Demo🔗](https://nirmalyax.dev/)
 
 ![Protfolio Website](src/assets/60060357-3D05-48DB-847B-EE3047F452F8_1_201_a.jpeg)
 
