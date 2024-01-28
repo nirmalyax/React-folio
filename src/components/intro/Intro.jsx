@@ -35,7 +35,7 @@ const Intro = () => {
           </div>
           <article className="about__card-para">
           <p className="summary">
-          With over 2+ years of experience in automation testing, I have honed my skills in ensuring the quality and functionality of web applications. My expertise includes creating automated test scripts, conducting test cases, and performing regression testing to detect and resolve issues in software. Additionally, I have a strong background in <strong>ClOUD <strong/>, enabling me to collaborate effectively with DEVOPS teams and understand the intricacies, leading to more comprehensive and efficient testing processes.
+          With over 2+ years of experience in automation testing, I have honed my skills in ensuring the quality and functionality of web applications. My expertise includes creating automated test scripts, conducting test cases, and performing regression testing to detect and resolve issues in software. Additionally, I have a strong background in ClOUD, enabling me to collaborate effectively with DEVOPS teams and understand the intricacies, leading to more comprehensive and efficient testing processes.
           </p>
           </article>
           <a href="#contact" className="btn btn-primary">
