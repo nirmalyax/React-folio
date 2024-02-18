@@ -4,7 +4,7 @@ import { AiOutlineUser } from 'react-icons/ai';
 import { BiBook } from 'react-icons/bi';
 import { RiServiceLine } from 'react-icons/ri';
 import { BiMessageSquareDetail } from 'react-icons/bi';
-
+import { SiLinktree } from "react-icons/si";
 
 
 import './topbar.css';
@@ -18,6 +18,7 @@ const Topbar = () => {
       <a href="#experience" onClick={()=> setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}><BiBook /></a>
       <a href="#portfolio" onClick={()=> setActiveNav('#portfolio')} className={activeNav === '#portfolio' ? 'active' : ''}><RiServiceLine /></a>
       <a href="#contact" onClick={()=> setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><BiMessageSquareDetail /></a>
+      <a href="https://linktr.ee/nirmalyax" onClick={()=> setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><SiLinktree /></a>
     </nav>
   )
 }
