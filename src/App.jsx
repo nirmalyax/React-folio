@@ -7,7 +7,7 @@ import Intro from './components/intro/Intro';
 import Projects from './components/projects/Projects';
 import Testimonials from './components/testimonials/Testimonials';
 import Topbar from './components/topbar/Topbar';
-import { Analytics } from '@vercel/analytics/react';
+//import { Analytics } from '@vercel/analytics/react';
 
 const App = () => {
   return (
@@ -20,7 +20,7 @@ const App = () => {
       <Testimonials />
       <Contact />
       <Footer />
-      <Analytics/>
+      
     </>
   )
 }
