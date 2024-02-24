@@ -8,7 +8,7 @@ jobs:
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}
-            - v1-dependencies-
+            - v1-dependencies-{{ checksum "package-lock.json" }}
       - run:
           name: Install Dependencies
           command: npm install
@@ -16,6 +16,7 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
+          key: v1-dependencies-{{ checksum "package-lock.json" }}
       - run:
           name: Build
           command: npm run build
