@@ -1,0 +1,15 @@
+version: 2.1
+orbs:
+  aws-cli: circleci/aws-cli@2.3.0
+jobs:
+  build:
+    executor: aws-cli/default
+    steps:
+      - checkout
+      - setup_remote_docker
+      - run:
+          name: Build the Docker image
+          command: docker build -t my-image .
+      - run:
+          name: Push the Docker image
+          command: docker push my-image
