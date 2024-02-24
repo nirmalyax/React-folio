@@ -16,7 +16,7 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-          key: v1-dependencies-{{ checksum "package-lock.json" }}
+          # key: v1-dependencies-{{ checksum "package-lock.json" }}
       - run:
           name: Build
           command: npm run build
