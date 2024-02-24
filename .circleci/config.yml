@@ -3,7 +3,7 @@ orbs:
   aws-cli: circleci/aws-cli@2.3.0
 jobs:
   build:
-    executor: aws-cli/default
+    executor: docker-cli/default
     steps:
       - checkout
       - setup_remote_docker
