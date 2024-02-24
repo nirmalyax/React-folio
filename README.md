@@ -1,5 +1,7 @@
 # React JS Portfolio Website
 
+[![CircleCI](https://dl.circleci.com/status-badge/img/circleci/Ea5U3ZY8HQfwaqnJwhMH4m/Erzp479kxzpZodyUmwv7Jh/tree/main.svg?style=svg&circle-token=b560e2e2e0b35ffcb7f57c2b03874b57d96aafb6)](https://dl.circleci.com/status-badge/redirect/circleci/Ea5U3ZY8HQfwaqnJwhMH4m/Erzp479kxzpZodyUmwv7Jh/tree/main)
+
 ![Protfolio Website](src/assets/60060357-3D05-48DB-847B-EE3047F452F8_1_201_a.jpeg)
 
 <div align="center">
