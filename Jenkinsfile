@@ -7,7 +7,7 @@ pipeline{
         stage('Checkout'){
             steps{
                 echo 'Checkout the project'
-                
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/nirmalyax/React-folio']])
             }
         }
         stage('NPM Install'){
