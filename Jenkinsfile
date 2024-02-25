@@ -1,9 +1,22 @@
 pipeline{
-    agent:any
+    agent any
     tools {
         nodejs 'nodejs'
     }
     stages{
+        stage('Checkout'){
+            steps{
+                echo 'Checkout the project'
+                
+            }
+        }
+        stage('NPM Install'){
+            steps{
+                echo 'Installing the dependencies'
+                sh 'sudo apt install npm'
+                sh 'sudo apt install nodejs'
+            }
+        }
         stage('Build'){
             steps{
                 echo 'Building the project'
