@@ -13,8 +13,8 @@ pipeline{
         stage('NPM Install'){
             steps{
                 echo 'Installing the dependencies'
-                sh 'sudo apt install npm'
-                sh 'sudo apt install nodejs'
+                // sh 'sudo apt install npm'
+                // sh 'sudo apt install nodejs'
             }
         }
         stage('Build'){
