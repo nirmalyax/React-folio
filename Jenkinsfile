@@ -48,7 +48,8 @@ pipeline{
         stage('Deploy'){
             steps{
                 echo 'Deploying the docker image'
-                sh 'docker run -d -p 3000:3000 nirmalyamondal/react:latestdevops'}
+                sh 'docker run -d -p 3000:3000 nirmalyamondal/react:latestdevops'
+                }
         }
     }
 }
