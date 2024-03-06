@@ -17,3 +17,4 @@ jobs:
 
       - name: Build and push Docker image
         run: docker build -f Dockerfile . -t nirmalyax/GitReact:latest && echo 'dckr_pat_p7Q4i20eKugIYxFja2hiNrDT0NY' | docker login -u 'nirmalyamondal' --password-stdin && docker push nirmalyamondal/GitReact:latest
+        
