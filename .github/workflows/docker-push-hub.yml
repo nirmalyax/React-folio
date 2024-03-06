@@ -10,15 +10,5 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Login to Docker Hub
-        uses: docker/login-action@v2
-        with:
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
-
       - name: Build and push Docker image
-        uses: docker/build-push-action@v4
-        with:
-          context: .
-          push: true
-          tags: nirmalyamondal/GithubReactPortfolio:latestGIT
+        run: docker build -f Dockerfile . -t nirmalyax/GitReact:latest && echo 'dckr_pat_p7Q4i20eKugIYxFja2hiNrDT0NY' | docker login -u 'nirmalyamondal' --password-stdin && docker push nirmalyamondal/GitReact:latest
