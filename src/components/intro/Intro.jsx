@@ -35,7 +35,7 @@ const Intro = () => {
           </div>
           <article className="about__card-para">
           <p className="summary">
-          With over 2+ years of experience in automation testing, I have honed my skills in ensuring the quality and functionality of web applications. My expertise includes creating automated test scripts, conducting test cases, and performing regression testing to detect and resolve issues in software. Additionally, I have a strong background in ClOUD, enabling me to collaborate effectively with DEVOPS teams and understand the intricacies, leading to more comprehensive and efficient testing processes.
+          I am a seasoned IT professional with 2+ years at Infosys, excelling in automation, cloud computing, and incident management. Proficient in Git, Jenkins, and GitLab, I specialize in Docker, Kubernetes, and Terraform for efficient infrastructure management. With over 2 years of AWS experience, I am adept at EC2, S3, RDS, IAM, and Route53. Skilled in Linux, bash scripting, Java, and VB Script, I bring a robust understanding of Atlassian tools, especially Jira. My versatile skill set includes expertise in Windows, Linux, Mac, and various tools such as Prometheus, ELK, and Ansible, ensuring effective contributions to project success.
           </p>
           </article>
           <a href="#contact" className="btn btn-primary">

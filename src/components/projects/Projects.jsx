@@ -77,7 +77,7 @@ const Projects = () => {
 
   return (
     <section id="portfolio">
-      <h5>My Recent Work</h5>
+      <h5>My Recent Work In WebDevelopment</h5>
       <h2>Projects</h2>
 
       <div className="container portfolio__container">
