@@ -1,5 +1,5 @@
 import './contact.css';
-import { Opulento } from "uvcanvas"
+import { Opulento } from "uvcanvas";
 import React, { useRef, useState } from 'react';
 
 import { MdOutlineEmail } from 'react-icons/md';
