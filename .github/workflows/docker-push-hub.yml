@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Login to Docker Hub
-        run: docker login -u 'nirmalyamondal' --password-stdin && echo 'dckr_pat_p7Q4i20eKugIYxFja2hiNrDT0NY'
+        run: echo 'dckr_pat_p7Q4i20eKugIYxFja2hiNrDT0NY' | docker login -u 'nirmalyamondal' --password-stdin 
         
       - name: Build Docker image
         run: docker build -f Dockerfile . -t nirmalyamondal/Portfolio:latest 
