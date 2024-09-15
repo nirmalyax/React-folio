@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Login to Docker Hub
-        run: echo $DOCKERHUB_PASSWORDS | docker login -u 'nirmalyamondal' --password-stdin 
+        run: echo $DOCKERHUB_PASSWORD | docker login -u 'nirmalyamondal' --password-stdin 
         
       - name: Build Docker image
         run: docker build -f Dockerfile . -t nirmalyamondal/portfolio:latest 
