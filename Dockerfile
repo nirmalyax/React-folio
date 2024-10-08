@@ -1,7 +1,9 @@
-# Production build by Nirmalya Mondal
-# Date: 2023-10-05
-# Time: 14:30 UTC
-# It uses the Caddy image (caddy:2), which is minimal but not a distroless image.
+##################################################################################
+# Production build by Nirmalya Mondal                                            #
+# Date: 2023-10-05                                                               #
+# Time: 14:30 UTC                                                                #
+# It uses the Caddy image (caddy:2), which is minimal but not a distroless image.#
+##################################################################################
 
 # Stage 1: Build the React app
 FROM node:18-alpine as build
