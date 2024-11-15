@@ -36,7 +36,7 @@ jobs:
 
     # Step 6: Scan Docker Image with Trivy
     - name: Scan Docker Image for Vulnerabilities
-      uses: aquasecurity/trivy-action@v0.8.0
+      uses: aquasecurity/trivy-action@latest
       with:
         image-ref: ${{ secrets.DOCKER_USERNAME }}/react-app:latest
 
