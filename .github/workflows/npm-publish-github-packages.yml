@@ -1,36 +1,49 @@
-# This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
-# For more information see: https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages
-
-name: Node.js Package
+name: Publish Node.js Package
 
 on:
   release:
     types: [created]
 
 jobs:
+  # Job 1: Build and Test
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - run: npm ci
-      - run: npm test
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
+      - name: Set up Node.js dynamically
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: package.json  # Automatically fetches Node.js version from package.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run tests
+        run: npm test
+
+  # Job 2: Publish Package to GitHub Packages
   publish-gpr:
-    needs: build
+    needs: build  # Only runs after the 'build' job is successful
     runs-on: ubuntu-latest
     permissions:
       contents: read
       packages: write
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js with GitHub Packages registry
+        uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version-file: package.json  # Automatically fetches Node.js version from package.json
           registry-url: https://npm.pkg.github.com/
-      - run: npm ci
-      - run: npm publish
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Publish package
+        run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use GitHub token for authentication
