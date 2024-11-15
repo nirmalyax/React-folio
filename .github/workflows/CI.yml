@@ -1,4 +1,4 @@
-name: CI Pipeline for React App
+name: CI Pipeline for MY App
 
 on:
   push:
@@ -9,30 +9,10 @@ on:
       - main
 
 jobs:
-  # Job 1: Lint the code
-  lint:
-    name: Lint Code
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Run Linter
-        
-
-  # Job 2: Build the application
+  # Job 1: Build the application
   build:
     name: Build Application
     runs-on: ubuntu-latest
-    needs: lint # Lint must succeed before building
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -48,7 +28,7 @@ jobs:
       - name: Build project
         run: npm run build
 
-  # Job 3: CodeQL Analysis
+  # Job 2: CodeQL Analysis
   codeql:
     name: CodeQL Analysis
     runs-on: ubuntu-latest
@@ -64,11 +44,11 @@ jobs:
       - name: Perform CodeQL analysis
         uses: github/codeql-action/analyze@v2
 
-  # Job 4: Build and Push Docker Image
+  # Job 3: Build and Push Docker Image
   docker:
     name: Build and Push Docker Image
     runs-on: ubuntu-latest
-    needs: [lint, build] # Both linting and building must succeed
+    needs: build # Docker job depends on successful build
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
