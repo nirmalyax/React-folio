@@ -1,53 +1,86 @@
-name: CI Pipeline
+name: CI Pipeline for React App
+
 on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
-  ci-pipeline:
+  # Job 1: Lint the code
+  lint:
+    name: Lint Code
     runs-on: ubuntu-latest
-
     steps:
-    # Step 1: Checkout the Code
-    - name: Checkout Code
-      uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    # Step 2: Set up Node.js Environment
-    - name: Set Up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: 16
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
 
-    # Step 3: Install Dependencies
-    - name: Install Dependencies
-      run: |
-        npm install
+      - name: Install dependencies
+        run: npm install
 
-    # Step 4: Run Linter
-    - name: Lint the Code
-      run: |
-        npm run lint
+      - name: Run Linter
+        run: npm run lint
 
-    # Step 5: Build Docker Image
-    - name: Build Docker Image
-      run: |
-        docker build -t ${{ secrets.DOCKER_USERNAME }}/react-app:latest .
+  # Job 2: Build the application
+  build:
+    name: Build Application
+    runs-on: ubuntu-latest
+    needs: lint # Lint must succeed before building
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    # Step 6: Scan Docker Image with Trivy
-    - name: Scan Docker Image for Vulnerabilities
-      uses: aquasecurity/trivy-action@latest
-      with:
-        image-ref: ${{ secrets.DOCKER_USERNAME }}/react-app:latest
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
 
-    # Step 7: Log in to Docker Hub
-    - name: Log in to Docker Hub
-      uses: docker/login-action@v2
-      with:
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
+      - name: Install dependencies
+        run: npm install
 
-    # Step 8: Push Docker Image to Docker Hub
-    - name: Push Docker Image
-      run: |
-        docker push ${{ secrets.DOCKER_USERNAME }}/react-app:latest
+      - name: Build project
+        run: npm run build
+
+  # Job 3: CodeQL Analysis
+  codeql:
+    name: CodeQL Analysis
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v2
+        with:
+          languages: 'javascript'
+
+      - name: Perform CodeQL analysis
+        uses: github/codeql-action/analyze@v2
+
+  # Job 4: Build and Push Docker Image
+  docker:
+    name: Build and Push Docker Image
+    runs-on: ubuntu-latest
+    needs: [lint, build] # Both linting and building must succeed
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Build Docker image
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/react-app:latest .
+
+      - name: Push Docker image to Docker Hub
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/react-app:latest
