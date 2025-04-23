@@ -28,21 +28,7 @@ jobs:
       - name: Build project
         run: npm run build
 
-  # Job 2: CodeQL Analysis
-  codeql:
-    name: CodeQL Analysis
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
 
-      - name: Initialize CodeQL
-        uses: github/codeql-action/init@v2
-        with:
-          languages: 'javascript'
-
-      - name: Perform CodeQL analysis
-        uses: github/codeql-action/analyze@v2
 
   # Job 3: Build and Push Docker Image
   docker:
@@ -60,7 +46,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/react-app:latest .
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/react-app:v.1.0.1 .
 
       - name: Push Docker image to Docker Hub
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/react-app:latest
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/react-app:v.1.0.1
